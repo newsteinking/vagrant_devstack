@@ -1,0 +1,4 @@
+spawn ssh -o stricthostkeychecking no -t root@10.4.0.200 echo root01 | sudo -S -- sh -c "grep -iv ^# /etc/hosts | grep -wq 10.3.0.222 || grep -iv ^# /etc/hosts | grep -wq STLMGCHEF.CNS.COM || echo 10.3.0.222 STLMGCHEF.CNS.COM >> /etc/hosts"
+Warning: Permanently added '10.4.0.200' (RSA) to the list of known hosts.
+root@10.4.0.200's password: 
+Connection to 10.4.0.200 closed.
